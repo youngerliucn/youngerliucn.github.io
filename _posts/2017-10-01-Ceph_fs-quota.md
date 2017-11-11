@@ -3,6 +3,7 @@ layout: post
 navigation: "storage"
 category: "storage"
 title:  "CephFS quota的支持"
+summary: 描述通用文件系统如何进行配额管理
 tags: [Ceph,FileSystem,quota]
 ---
 #  通用文件系统的quota实践
