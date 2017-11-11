@@ -3,11 +3,12 @@ layout: post
 title:  "RBD元数据分析"
 date:   2017-11-11
 categories: ceph
-tags: Ceph,RBD,Metadata
-description: RBD镜像都是由元数据和数据两部分组成，元数据存储在多个特殊的rados对象中。
+tags: RBD
+description: RBD镜像都是由元数据和数据两部分组成，元数据存储在多个特殊的rados对象中.
 ---
 
-#RBD元数据分析
+
+#RBD元数据分析#
 
 ​RBD作为Ceph提供的块设备，每一个RBD镜像都是由**元数据**和**数据**两部分组成，所有的元数据存储在多个特殊的rados对象中，而数据被自动条带化成多个rados对象进行存储。
 
@@ -28,14 +29,12 @@ RBD元数据主要有三种存储方式：
 ​
 	通过以下命令可以了解：
 
-~~~
-[root@younger build]# ./bin/rados -p rbd_pool ls
-rbd_object_map.10482ae8944a
-rbd_header.10482ae8944a
-rbd_id.testimg
-...
-[root@younger build]#
-~~~
+	[root@younger build]# ./bin/rados -p rbd_pool ls
+	rbd_object_map.10482ae8944a
+	rbd_header.10482ae8944a
+	rbd_id.testimg
+	...
+	[root@younger build]#
 
 
 
@@ -45,12 +44,10 @@ rbd_id.testimg
 
 ​        通过rados命令查询：
 
-~~~
-[root@younger build]# ./bin/rados get rbd_id.testimg -p rbd_pool rbd_id_info
-[root@younger build]# cat rbd_id_info 
-10482ae8944a
-[root@younger build]# 
-~~~
+	[root@younger build]# ./bin/rados get rbd_id.testimg -p rbd_pool rbd_id_info
+	[root@younger build]# cat rbd_id_info 
+	10482ae8944a
+	[root@younger build]# 
 
 ​       知道rbd_pool/testimg镜像的id为10482ae8944a，那么通过rbd命令可以进一步验证
 
