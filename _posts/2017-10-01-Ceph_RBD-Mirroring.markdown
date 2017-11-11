@@ -30,13 +30,13 @@ tags: [Ceph,RBD,Mirroring]
 
 ​        RBD mirror必须依赖于journaling特性，且需要额外部署rbd-mirror服务：
 
-![image](flow/rbd-mirror.jpg)
+![image](https://raw.githubusercontent.com/youngerliucn/youngerliucn.github.io/master/_posts/flow/rbd-mirror.jpg)
 
 ​        再来了解一下Ceph的journal机制（此处的journal是指Ceph RBD的journal，而不是OSD的journal）。
 
 ​        当RBD Journal功能打开后，所有的数据更新请求会先写入RBD Journal，然后后台线程再把数据从Journal区域刷新到对应的image区域。RBD journal提供了比较完整的日志记录、读取、变更通知以及日志回收和空间释放等功能，可以认为是一个分布式的日志系统。
 
-![image](flow/rbd-mirror_syly.jpg) 
+![image](https://raw.githubusercontent.com/youngerliucn/youngerliucn.github.io/master/_posts/flow/rbd-mirror_syly.jpg) 
 
 具步骤如下：
 
