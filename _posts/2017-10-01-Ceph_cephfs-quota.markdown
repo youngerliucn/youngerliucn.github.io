@@ -1,10 +1,10 @@
-~~~
+---
 layout: post
 navigation: "存储"
 category: "Ceph"
 title:  "CephFS quota的支持"
 tags: [Ceph,CephFS,quota]
-~~~
+---
 
 #CephFS quota的支持
 
