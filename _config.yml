@@ -5,15 +5,14 @@ excerpt_separator: "<!-- more -->"
 
 github: youngerliucn
 author: "YoungerLiu"
-email: lewiyon#126.com
+email: lewiyon@126.com
 name: "灰色土著(Aboriginal Tribe)"
 url: http://youngerliucn.github.io
 domain: youngerliucn.github.io
-all_categories: [
-["android", "Android开发","/posts/android.html"], 
-["program", "软件编程","/posts/program.html"],
-["web", "Web建站","/posts/web.html"], 
-["linux", "Linux相关","/posts/linux.html"],
+all_categories: [ 
+["android", "存储","/posts/storage.html"], 
+["program", "编程","/posts/program.html"],
+["linux", "内核","/posts/kernel.html"],
 ["read", "读书笔记","/posts/read.html"], 
 ["other", "杂记","/posts/other.html"],
 ["about", "关于","/about.html"]
