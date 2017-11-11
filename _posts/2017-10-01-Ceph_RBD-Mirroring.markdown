@@ -1,7 +1,7 @@
 ---
 layout: post
-navigation: "存储"
-category: "Ceph"
+navigation: "storage"
+category: "storage"
 title:  "RBD Mirroring - 原理、概念、命令"
 tags: [Ceph,RBD,Mirroring]
 ---
@@ -32,9 +32,6 @@ tags: [Ceph,RBD,Mirroring]
 
 ![image](https://raw.githubusercontent.com/youngerliucn/youngerliucn.github.io/master/_posts/flow/rbd-mirror.jpg)
 
-============
-
-![image](/flow/rbd-mirror.jpg)
 ​        再来了解一下Ceph的journal机制（此处的journal是指Ceph RBD的journal，而不是OSD的journal）。
 
 ​        当RBD Journal功能打开后，所有的数据更新请求会先写入RBD Journal，然后后台线程再把数据从Journal区域刷新到对应的image区域。RBD journal提供了比较完整的日志记录、读取、变更通知以及日志回收和空间释放等功能，可以认为是一个分布式的日志系统。

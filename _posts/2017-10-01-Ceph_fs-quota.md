@@ -1,3 +1,10 @@
+---
+layout: post
+navigation: "storage"
+category: "storage"
+title:  "CephFS quota的支持"
+tags: [Ceph,FileSystem,quota]
+---
 #  通用文件系统的quota实践
 
 ##1 理论基础
