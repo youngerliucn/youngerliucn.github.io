@@ -4,10 +4,7 @@ title:  "RBD元数据分析"
 date:   2017-11-11
 categories: ceph
 tags: Ceph,RBD,Metadata
----
-
----
-description: RBD作为Ceph提供的块设备，每一个RBD镜像都是由元数据和数据两部分组成，所有的元数据存储在多个特殊的rados对象中，而数据被自动条带化成多个rados对象进行存储。
+description: RBD镜像都是由元数据和数据两部分组成，元数据存储在多个特殊的rados对象中。
 ---
 
 #RBD元数据分析
