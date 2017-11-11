@@ -22,13 +22,13 @@
 
 ​        RBD mirror必须依赖于journaling特性，且需要额外部署rbd-mirror服务：
 
-![rbd-mirror](E:\03_电子藏书馆_试建\502_cookbook\flow\rbd-mirror.jpg)
+![rbd-mirror](.\flow\rbd-mirror.jpg)
 
 ​        再来了解一下Ceph的journal机制（此处的journal是指Ceph RBD的journal，而不是OSD的journal）。
 
 ​        当RBD Journal功能打开后，所有的数据更新请求会先写入RBD Journal，然后后台线程再把数据从Journal区域刷新到对应的image区域。RBD journal提供了比较完整的日志记录、读取、变更通知以及日志回收和空间释放等功能，可以认为是一个分布式的日志系统。
 
-![rbd-mirror_syly](E:\03_电子藏书馆_试建\502_cookbook\flow\rbd-mirror_syly.jpg)
+![rbd-mirror_syly](.\flow\rbd-mirror_syly.jpg)
 
 具步骤如下：
 
@@ -241,9 +241,9 @@ rbd --cluster remote mirror pool peer remove image-pool 60c0e299-b38f-4234-91f6-
 
 ​        RBD Mirroring需要启用 RBD Journaling特性确保image的复制能够报春数据一致性。在镜像备份到伙伴集群前，journaling特性必须启用，journaling特性可以在创建rbd镜像时通过命令` --image-feature exclusive-lock,journaling`来启用.
 
-~~~
-rbd create image-pool/image-1 --image-feature exclusive-lock,journaling
-~~~
+
+	rbd create image-pool/image-1 --image-feature exclusive-lock,journaling
+
 
 
 
