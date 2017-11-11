@@ -1,54 +1,22 @@
-Jekyll Xixia
-============
+Jekyll博客模板
+================
 
-* Get it from [github](https://github.com/zxixia/jekyll-xixia).
-* See the [live demo](http://zxixia.github.io/jekyll-xixia/).
-* See it [in action on my own blog](http://xixia.info/).
+#### 1.浏览
+http://www.panxw.com, 支持PC与智能机访问。  
 
-A simple and clean Jekyll theme using [bootstrap](http://getbootstrap.com)
-(not to be confused with jekyll-bootstrap) that's easy to modify and very
-modular in component and element reuse.
+#### 2.模板使用
+修改_config.yml与_includes目录下相关文件进行配置。  
+模板可任意使用，但请保留本站**友情链接**。  
 
-The theme works well on mobile phones, using a collapsable nav bar and hiding the
-sidebar. The links pane in the sidebar is available on mobile through the nav menu,
-and you can do the same thing for any other sections added to the sidebar.
+#### 3.联系作者
+Email: winfirm(#)163.com  
+QQ交流群: 168563980  
 
-Don't forget to occassionally merge against my upstream repository so you can get
-the latest changes. Pull requests are encouraged and accepted!
+#### 4.赞助
+想给作者予以鼓励？欢迎打赏吧。  
+支付宝:  
+<img width="200" height="200" src="http://o83o7w0hk.bkt.clouddn.com//donate_qr/donate_alipay.jpg"/>
 
-Preview
-=======
-![Xixia](/assets/images/preview.png)
+微信:  
+<img width="200" height="200" src="http://o83o7w0hk.bkt.clouddn.com//donate_qr/donate_weixin.jpg"/>
 
-License
-=======
-
-The content of this theme is distributed and licensed under a
-![License Badge](assets/images/cc_by_88x31.png)
-[Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/legalcode)
-
-    This license lets others distribute, remix, tweak, and build upon your work,
-    even commercially, as long as they credit you for the original creation. This
-    is the most accommodating of licenses offered. Recommended for maximum
-    dissemination and use of licensed materials.
-
-In other words: you can do anything you want with this theme on any site, just please
-provide a link to [the original theme on github](https://github.com/zxixia/jekyll-xixia)
-so I get credit for the original design. Beyond that, have at it!
-
-Thanks
-======
-
-1，[Jekyll][jekyll-url]
-
-2，[Bootstrap][bootstrap-url]
-
-3，[Github][github-url]
-
-4，[Jekyll Clean Theme][Jekyll-Clean-Theme-url]
-
-[jekyll-url]: http://jekyllrb.com/
-[bootstrap-url]: http://getbootstrap.com/
-[github-url]: https://github.com/
-[Jekyll-Clean-Theme-url]: https://github.com/scotte/jekyll-clean
-[xixia-url]: http://xixia.info/
