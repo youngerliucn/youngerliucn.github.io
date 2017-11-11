@@ -1,4 +1,13 @@
-# CephFS quota的支持
+~~~
+layout: post
+navigation: "存储"
+category: "Ceph"
+title:  "CephFS quota的支持"
+tags: [Ceph,CephFS,quota]
+~~~
+
+#CephFS quota的支持
+
 CephFS 允许给系统内的任意目录设置配额，这个配额可以限制目录树中这一点以下的字节数或者文件数。
 
 ##局限性
@@ -9,8 +18,8 @@ CephFS 允许给系统内的任意目录设置配额，这个配额可以限制�
 
 ##与通用文件系统quota对比
 1.	CephFS quota是针对目录的，可限制目录下存放的文件数量和容量
-2.	CephFS没有一个统一的UID/GID机制，传统的基于用户和组的配额管理机制很难使用
-3.	CephFS一般与应用配合使用，应用自己记录用户信息，将用户关联到对应的CephFS目录
+  2.CephFS没有一个统一的UID/GID机制，传统的基于用户和组的配额管理机制很难使用
+  3.CephFS一般与应用配合使用，应用自己记录用户信息，将用户关联到对应的CephFS目录
 
 
 
