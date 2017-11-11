@@ -1,3 +1,11 @@
+---
+layout: post
+navigation: "存储"
+category: "Ceph"
+title:  "RBD Mirroring - 原理、概念、命令"
+tags: [Ceph,RBD,Mirroring]
+---
+
 #RBD Mirroring - 原理、概念、命令
 
 ​        Ceph采用的是强一致性同步模型，所有副本都必须完成写操作才算一次写入成功，这就导致不能很好地支持跨域部署，因为如果副本在异地，网络延迟就会很大，拖垮整个集群的写性能。因此，Ceph集群很少有跨域部署的，也就缺乏异地容灾。
