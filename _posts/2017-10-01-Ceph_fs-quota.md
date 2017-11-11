@@ -1,10 +1,10 @@
 ---
 layout: post
-navigation: "storage"
-category: "storage"
 title:  "CephFS quota的支持"
-summary: 描述通用文件系统如何进行配额管理
-tags: [Ceph,FileSystem,quota]
+categories: Storage
+tags: Ceph,Quota
+author: lewiyon@126.com
+description: 通用文件系统如何实现用户配额管理
 ---
 #  通用文件系统的quota实践
 

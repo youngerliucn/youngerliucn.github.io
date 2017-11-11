@@ -1,10 +1,11 @@
 ---
 layout: post
 title:  "CephFS quota的支持"
-categories: Ceph
+categories: Storage
 tags: "Ceph,CephFS,quota"
 author: lewiyon@126.com
 description: CephFS 允许给系统内的任意目录设置配额，这个配额可以限制目录树中这一点以下的字节数或者文件数
+date:   2017-11-11 14:10:51 +0800
 ---
 
 #CephFS quota的支持
