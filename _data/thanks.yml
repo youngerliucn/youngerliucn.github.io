@@ -1,11 +1,8 @@
+- url: "https://youngerliucn.github.io/"
+  title: "YoungerLab"
+
 - url: "http://jekyllrb.com/"
   title: "Jekyll"
 
-- url: "http://getbootstrap.com/"
-  title: "Bootstrap"
-
 - url: "https://github.com/"
   title: "Github"
-
-- url: "https://github.com/zxixia/jekyll-xixia"
-  title: "Xixia"      
